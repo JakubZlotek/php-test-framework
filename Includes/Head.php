@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="theme-color" content="#ff6781">
     <!-- BOOTSTRAP CSS --><link media rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!-- LOCAL CSS --> <link media rel="stylesheet" href="../Styles/Main.css" type="text/css">
+    <!-- LOCAL CSS --> <link media rel="stylesheet" href="Styles/Main.css" type="text/css">
     <!-- FONT AWESOME --> <link media rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     <!-- EMERGENCY JQUERY SCRIPT  --> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- BOOTSTRAP SCRIPT --> <script async src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
