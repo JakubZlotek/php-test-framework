@@ -2,6 +2,15 @@ html {
     background-color: #fff;
 }
 
+body {
+  background-color: #fff;
+  transition: 4s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
 
 /* sign in FORM */
 #logreg-forms{

@@ -94,31 +94,30 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta charset="UTF-8">
     <title>Login</title>
     <?php include 'Includes/Head.php'?>
-    <style type="text/css">
-        body{ font: 14px sans-serif; }
-        .wrapper{ width: 350px; padding: 20px; }
-    </style>
+    <link href="Styles/Signin.css" rel="stylesheet">
 </head>
-<body>
-    <div class="wrapper">
-        <h2>Login</h2>
-        <p>Please fill in your credentials to login.</p>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-            <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
-                <label>Username</label>
-                <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
-                <span class="help-block"><?php echo $username_err; ?></span>
-            </div>
-            <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-                <label>Password</label>
-                <input type="password" name="password" class="form-control">
-                <span class="help-block"><?php echo $password_err; ?></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Login">
-            </div>
-            <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
-        </form>
-    </div>
+<body class="text-center">
+
+  <script>
+    document.body.className += ' fade-out';
+  </script>
+
+  <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="form-signin">
+    <img class="mb-4" src="img/logo.png" alt="" width="72" height="72">
+    <h1 class="h3 mb-3 font-weight-normal">Prosze sie zalogować</h1>
+    <label for="inputUsername" class="sr-only">Nazwa Użytkownika</label>
+    <input type="text" id="inputUsername" name="username" class="form-control" placeholder="Nazwa Użytkownika" required autofocus>
+    <label for="inputPassword" class="sr-only">Hasło</label>
+    <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Hasło" required>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Zaloguj się</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2020-2020</p>
+    <p>Nie masz konta? <a href="register.php">Zarejestruj się</a>.</p>
+  </form>
+
+  <script>
+    $(function() {
+      $('body').removeClass('fade-out');
+    });
+  </script>
 </body>
 </html>
