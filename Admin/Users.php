@@ -5,13 +5,15 @@ session_start();
 
 
 <html lang="pl">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Welcome</title>
-    <?php include '../Includes/Head.php'?>
-    <link href="../Styles/main.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Welcome</title>
+  <?php include '../Includes/Head.php'?>
+  <link href="../Styles/main.css" rel="stylesheet">
 
 </head>
+
 <body>
 
   <script>
@@ -19,14 +21,7 @@ session_start();
   </script>
 
   <?php include '../Includes/Nav.php'?>
-<br>
-
-
-
-
-
-
-
+  <br>
 
 
   <div class="container">
@@ -35,7 +30,7 @@ session_start();
 
 
 
-        <?php
+      <?php
 
       require_once "../config.php";
 
@@ -82,4 +77,5 @@ session_start();
   </script>
 
 </body>
+
 </html>
