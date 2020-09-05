@@ -10,6 +10,7 @@ session_start();
     <title>Welcome</title>
     <?php include '../Includes/Head.php'?>
     <link href="../Styles/main.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -19,6 +20,8 @@ session_start();
 
   <?php include '../Includes/Nav.php'?>
 <br>
+
+
 
 
 
@@ -36,7 +39,7 @@ session_start();
 
       require_once "../config.php";
 
-      $sql = "SELECT id, username, created_at FROM users ORDER BY `id` ASC";
+      $sql = "SELECT id, username, created_at, avatar FROM users ORDER BY `id` ASC";
       $result = $conn->query($sql);
       if ($result->num_rows > 0) {
       // output data of each row
@@ -48,7 +51,8 @@ session_start();
             <h4 class="my-0 font-weight-normal">' . $row["username"]. '</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">Konto Utworzone: </br><small class="text-muted">' . $row["created_at"]. '</small></h1>
+          <img src="' . $row["avatar"]. '" style = "width: 160px;height: 160px; border-radius: 100%">
+            <h2 class="card-title pricing-card-title">Konto Utworzone: </br><small class="text-muted">' . $row["created_at"]. '</small></h2>
             <button type="button" class="btn btn-lg btn-block btn-outline-primary">EDYTUJ</button>
           </div>
         </div></div>';
