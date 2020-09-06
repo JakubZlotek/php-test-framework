@@ -34,7 +34,7 @@ session_start();
 
       require_once "../config.php";
 
-      $sql = "SELECT id, username, created_at, avatar FROM users ORDER BY `id` ASC";
+      $sql = "SELECT id, imie, nazwisko, created_at, avatar FROM users ORDER BY `id` ASC";
       $result = $conn->query($sql);
       if ($result->num_rows > 0) {
       // output data of each row
@@ -43,12 +43,12 @@ session_start();
 
         echo '<div class="col-md-4"><div class="card mb-4 shadow-sm">
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal">' . $row["username"]. '</h4>
+            <h4 class="my-0 font-weight-normal">' . $row["imie"]. " ". $row["nazwisko"]. '</h4>
           </div>
           <div class="card-body">
           <img src="' . $row["avatar"]. '" style = "width: 160px;height: 160px; border-radius: 100%">
             <h2 class="card-title pricing-card-title">Konto Utworzone: </br><small class="text-muted">' . $row["created_at"]. '</small></h2>
-            <button type="button" class="btn btn-lg btn-block btn-outline-primary">EDYTUJ</button>
+            <a class="btn btn-lg btn-block btn-outline-primary" role="button" href="http://localhost/admin/useredit.php?userid='. $row["id"]. '">EDYTUJ</a>
           </div>
         </div></div>';
 
