@@ -34,15 +34,20 @@ session_start();
 
       require_once "../config.php";
 
-      $sql = "SELECT id, imie, nazwisko, created_at, avatar FROM users ORDER BY `id` ASC";
+      $sql = "SELECT id, imie, nazwisko, created_at, avatar, admin FROM users ORDER BY `id` ASC";
       $result = $conn->query($sql);
       if ($result->num_rows > 0) {
       // output data of each row
       while($row = $result->fetch_assoc()) {
 
+        if ($row["admin"] == 1) {
+          $text = '<t style="color:#b61d36" style="margin-bottom: 0">Administrator</t>';
+        } else {
+          $text = '<t style="color:#228c16" style="margin-bottom: 0">Użytkownik</t>';
+        };
 
         echo '<div class="col-md-4"><div class="card mb-4 shadow-sm">
-          <div class="card-header">
+          <div class="card-header">'. $text .'
             <h4 class="my-0 font-weight-normal">' . $row["imie"]. " ". $row["nazwisko"]. '</h4>
           </div>
           <div class="card-body">
