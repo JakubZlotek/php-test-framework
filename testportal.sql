@@ -1,74 +1,22 @@
--- phpMyAdmin SQL Dump
--- version 5.0.2
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Czas generowania: 06 Wrz 2020, 01:36
--- Wersja serwera: 10.4.13-MariaDB
--- Wersja PHP: 7.4.7
+create table users
+(
+    id         int auto_increment
+        primary key,
+    username   varchar(50)                                                             not null,
+    password   varchar(255)                                                            not null,
+    imie       varchar(50)                                                             not null,
+    nazwisko   varchar(50)                                                             not null,
+    email      varchar(50)                                                             not null,
+    admin      enum ('0', '1') default '0'                                             not null,
+    created_at datetime        default current_timestamp()                             null,
+    avatar     varchar(255)    default 'http://localhost/userdata/avatars/default.png' not null,
+    constraint username
+        unique (username)
+);
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Baza danych: `testportal`
---
-
--- --------------------------------------------------------
-
---
--- Struktura tabeli dla tabeli `users`
---
-
-CREATE TABLE `users` (
-  `id` int(11) NOT NULL,
-  `username` varchar(50) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  `admin` enum('0','1') NOT NULL DEFAULT '0',
-  `created_at` datetime DEFAULT current_timestamp(),
-  `avatar` varchar(255) NOT NULL DEFAULT 'http://localhost/userdata/avatars/default.png'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Zrzut danych tabeli `users`
---
-
-INSERT INTO `users` (`id`, `username`, `password`, `admin`, `created_at`, `avatar`) VALUES
-(1, 'admin', '$2y$10$Et47XSBrU2irj09trI6iteQe6TPC6NvopgXJ3H.rDX2/LAjz6bBWi', '1', '2020-09-05 11:04:17', 'http://localhost/userdata/avatars/default.png'),
-(2, 'Uzytkownik 2', 'dsaasd', '0', '2020-09-06 01:01:10', 'http://localhost/userdata/avatars/default.png'),
-(3, 'Uzytkownik 3', 'asdasdas', '0', '2020-09-06 01:01:10', 'http://localhost/userdata/avatars/default.png'),
-(4, 'Uzytkownik 4', '', '0', '2020-09-06 01:01:38', 'http://localhost/userdata/avatars/default.png'),
-(5, 'Uzytkownik 5', '', '0', '2020-09-06 01:01:38', 'http://localhost/userdata/avatars/default.png');
-
---
--- Indeksy dla zrzutów tabel
---
-
---
--- Indeksy dla tabeli `users`
---
-ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `username` (`username`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT dla tabeli `users`
---
-ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+INSERT INTO testportal.users (id, username, password, imie, nazwisko, email, admin, created_at, avatar) VALUES (1, 'admin', '$2y$10$Et47XSBrU2irj09trI6iteQe6TPC6NvopgXJ3H.rDX2/LAjz6bBWi', 'Admin', 'Adminowski', 'admin@admin.com', '1', '2020-09-05 11:04:17', 'https://avatarfiles.alphacoders.com/161/thumb-161326.png');
+INSERT INTO testportal.users (id, username, password, imie, nazwisko, email, admin, created_at, avatar) VALUES (2, 'Uzytkownik 2', 'dsaasd', 'Antoni', 'Macierewicz', 'kubaxxxxaaa@wp.pl', '0', '2020-09-06 01:01:10', 'https://s2.thingpic.com/images/wM/zaBSbj63iypyGPdDvtzV3Eag.png');
+INSERT INTO testportal.users (id, username, password, imie, nazwisko, email, admin, created_at, avatar) VALUES (3, 'Uzytkownik 3', 'asdasdas', 'Siara', 'Siarzewski', 'janwojo65@mail.ru', '0', '2020-09-06 01:01:10', 'https://lh3.googleusercontent.com/proxy/hheAgmP8Dhj8F5_v8agAbMZM_1TI1-OP6WNWYku3iUZxz7umtbs5wqFRZi0781VDmiZXdw_RRJZfZB8Lz3Sg9EwA_dcV');
+INSERT INTO testportal.users (id, username, password, imie, nazwisko, email, admin, created_at, avatar) VALUES (4, 'Uzytkownik 4', '', 'Jan', 'Pawel', 'email@dupa.essa', '0', '2020-09-06 01:01:38', 'https://www.wykop.pl/cdn/c3201142/comment_1581049402KDjdQbQQU160kERvoEc2KN,w400.jpg');
+INSERT INTO testportal.users (id, username, password, imie, nazwisko, email, admin, created_at, avatar) VALUES (5, 'Uzytkownik 5', '', 'Jerzy', 'Kiler', 'zs@belzyce.edu.pl', '0', '2020-09-06 01:01:38', 'https://avatarfiles.alphacoders.com/572/thumb-57256.jpg');
+INSERT INTO testportal.users (id, username, password, imie, nazwisko, email, admin, created_at, avatar) VALUES (6, 'AdamMickiewicz', 'da', 'Adam', 'Mickiewicz', 'slowackito@dziwka.pl', '0', '2020-09-06 12:41:12', 'https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/f8/f856ba7cefcbb1a2786fab1722e9d77aad26834b_full.jpg');
