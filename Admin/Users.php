@@ -53,7 +53,7 @@ session_start();
           <div class="card-body">
           <img src="' . $row["avatar"]. '" style = "width: 160px;height: 160px; border-radius: 100%">
             <h2 class="card-title pricing-card-title">Konto Utworzone: </br><small class="text-muted">' . $row["created_at"]. '</small></h2>
-            <a class="btn btn-lg btn-block btn-outline-primary" role="button" href="http://testy.jajuwa.pl/admin/useredit.php?userid='. $row["id"]. '">EDYTUJ</a>
+            <a class="btn btn-lg btn-block btn-outline-primary" role="button" href="http://51.77.44.79/php-test-framework/admin/useredit.php?userid='. $row["id"]. '">EDYTUJ</a>
           </div>
         </div></div>';
 
