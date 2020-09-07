@@ -1,7 +1,7 @@
 <footer class="pt-4 my-md-5 pt-md-5 border-top">
   <div class="row">
     <div class="col-12 col-md">
-      <img class="mb-2" src="http://51.77.44.79/img/logo.png" alt="" width="24" height="24">
+      <img class="mb-2" src="http://testy.jajuwa.pl/img/logo.png" alt="" width="24" height="24">
       <small class="d-block mb-3 text-muted">&copy; 2137-420</small>
     </div>
     <div class="col-6 col-md">
