@@ -9,7 +9,7 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
 }
 
 // Include config file
-require_once "http://51.77.44.79/php-test-framework/config.php";
+require_once "config.php";
 
 // Define variables and initialize with empty values
 $username = $password = "";
