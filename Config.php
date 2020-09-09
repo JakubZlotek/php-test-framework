@@ -1,6 +1,7 @@
 <?php
 @session_start();
-    $host = $_SERVER['HTTP_HOST'] . "/";
+    
+    $host = "http://" . $_SERVER['HTTP_HOST'] . "/";
     $inc = "/Includes/";
     $img = "/Img/";
     $css = "/Styles/";
