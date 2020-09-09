@@ -9,7 +9,7 @@ create table users
     email      varchar(50)                                                             not null,
     admin      enum ('0', '1') default '0'                                             not null,
     created_at datetime        default current_timestamp()                             null,
-    avatar     varchar(255)    default 'http://51.77.44.79/php-test-framework/userdata/avatars/default.png' not null,
+    avatar     varchar(255)    default 'http://testy.jajuwa.pl/userdata/avatars/default.png' not null,
     constraint username
         unique (username)
 );
