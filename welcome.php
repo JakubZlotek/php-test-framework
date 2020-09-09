@@ -1,4 +1,5 @@
 <?php
+include 'Config.php';
 // Initialize the session
 session_start();
 
@@ -14,7 +15,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <head>
     <meta charset="UTF-8">
     <title>Welcome</title>
-    <?php include 'Includes/Head.php'?>
+    <?php include APP_DIR_INC .'Head.php'?>
     <link href="Styles/carousel.css" rel="stylesheet">
 </head>
 <body>
@@ -23,7 +24,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     document.body.className += ' fade-out';
   </script>
 
-  <?php include 'Includes/Nav.php'?>
+  <?php include  APP_DIR_INC .'Nav.php'?>
 
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -78,8 +79,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 
     
-    <?php include 'Includes/Body.php'?>
-    <?php include 'Includes/Footer.php'?>
+    <?php include APP_DIR_INC . 'Body.php'?>
+    <?php include APP_DIR_INC . 'Footer.php'?>
   </div>
 
 
