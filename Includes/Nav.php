@@ -12,8 +12,18 @@
 
       <?php
       if ($_SESSION["isadmin"] == 1) {
-        include 'Navadmin.php';
-      };
+          echo'<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Administrator
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="http://51.77.44.79/php-test-framework/Admin/Users.php">Użytkownicy</a>
+              <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>';
+      }
 
       ?>
     </ul>
