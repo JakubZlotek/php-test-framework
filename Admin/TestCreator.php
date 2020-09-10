@@ -1,7 +1,8 @@
 <?php
-require 'http://testy.jajuwa.pl/Config.php';
-
+// Initialize the session
+session_start();
 ?>
+
 <!DOCTYPE html>
 <html lang="PL">
 <head>
