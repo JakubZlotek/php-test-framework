@@ -19,7 +19,45 @@ while($row = $result->fetch_assoc()) {
    $nazwisko = $row["nazwisko"];
    $email = $row["email"];
 };
-$conn->close();
+
+
+
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+
+    $id = trim($_POST["id"];
+    if(!empty(trim($_POST["username"]))){
+      $username = trim($_POST["username"]);
+      $stmt = $conn->prepare("UPDATE users SET username = ? WHERE id = ?");
+      $stmt->bind_param("sss", $username, $id);
+      $stmt->execute();
+    };
+
+    if(!empty(trim($_POST["first_name"]))){
+      $imie = trim($_POST["first_name"]);
+      $stmt = $conn->prepare("UPDATE users SET imie = ? WHERE id = ?");
+      $stmt->bind_param("sss", $imie, $id);
+      $stmt->execute();
+    };
+
+    if(!empty(trim($_POST["last_name"]))){
+      $nazwisko = trim($_POST["last_name"]);
+      $stmt = $conn->prepare("UPDATE users SET nazwisko = ? WHERE id = ?");
+      $stmt->bind_param("sss", $nazwisko, $id);
+      $stmt->execute();
+    };
+
+    if(!empty(trim($_POST["email"]))){
+      $email = trim($_POST["email"]);
+      $stmt = $conn->prepare("UPDATE users SET email = ? WHERE id = ?");
+      $stmt->bind_param("sss", $email, $id);
+      $stmt->execute();
+    };
+
+
+
+
+};
+mysqli_close($conn);
 
 ?>
 
@@ -93,8 +131,9 @@ $conn->close();
 
                           <div class="form-group">
                               <div class="col-xs-6">
-                                 <label for="mobile"><h4>Nazwa Użytkownika</h4></label>
-                                  <input type="text" class="form-control" name="mobile" id="mobile" placeholder="<?php echo $username?>" title="<?php echo $username?>">
+                                 <label for="username"><h4>Nazwa Użytkownika</h4></label>
+                                 <input type="hidden" id="id" name="id" value="<?php echo $username?>">
+                                  <input type="text" class="form-control" name="username" id="mobile" placeholder="<?php echo $username?>" title="<?php echo $username?>">
                               </div>
                           </div>
                           <div class="form-group">
@@ -122,7 +161,7 @@ $conn->close();
                    <h2></h2>
 
                    <hr>
-                      <form class="form" action="##" method="post" id="registrationForm">
+                      <form class="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" id="registrationForm">
                           <div class="form-group">
 
                               <div class="col-xs-6">
