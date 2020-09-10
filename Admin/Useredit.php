@@ -24,7 +24,7 @@ while($row = $result->fetch_assoc()) {
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
-    $id = trim($_POST["id"];
+    $id = trim($_POST["id"]);
     if(!empty(trim($_POST["username"]))){
       $username = trim($_POST["username"]);
       $stmt = $conn->prepare("UPDATE users SET username = ? WHERE id = ?");
