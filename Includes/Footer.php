@@ -6,8 +6,10 @@
       <small class="d-block mb-3 text-muted">Jest już nas:
       <?php
       include '../Config.php';
-      $result = mysql_query("SELECT count(*) from users;");
-echo mysql_result($result, 0);
+      $sth =  $conn->prepare('SELECT count(*) from users');
+      $sth->execute();
+      print_r($sth->fetchAll());
+      mysqli_close($conn);
       ?>
     </small>
     </div>
