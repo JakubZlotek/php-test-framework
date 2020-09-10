@@ -112,7 +112,7 @@ mysqli_close($conn);
               <div class="tab-content">
                 <div class="tab-pane active" id="home">
                     <hr>
-                      <form class="form" action="editaction.php" method="post" id="registrationForm">
+                      <form class="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" id="registrationForm">
                           <div class="form-group">
 
                               <div class="col-xs-6">
@@ -161,7 +161,7 @@ mysqli_close($conn);
                    <h2></h2>
 
                    <hr>
-                      <form class="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" id="registrationForm">
+                      <form class="form" action="##" method="post" id="registrationForm">
                           <div class="form-group">
 
                               <div class="col-xs-6">
