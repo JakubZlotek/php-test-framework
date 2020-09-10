@@ -20,7 +20,7 @@
               Administrator
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="http://testy.jajuwa.pl/Admin/Users.php"><i class="fas fa-user"></i>Użytkownicy</a>
+              <a class="dropdown-item" href="http://testy.jajuwa.pl/Admin/Users.php"><i class="fas fa-user" style="margin-right: 5px;"></i>Użytkownicy</a>
               <a class="dropdown-item" href="#">Another action</a>
           </li>';
       }
