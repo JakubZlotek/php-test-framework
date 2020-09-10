@@ -95,7 +95,7 @@ mysqli_close($conn);
                           <div class="form-group">
                               <div class="col-xs-6">
                                  <label for="username"><h4>Nazwa Użytkownika</h4></label>
-                                 <input type="hidden" id="id" name="id" value="<?php echo $username?>">
+                                 <input type="hidden" id="id" name="id" value="<?php echo $id?>">
                                   <input type="text" class="form-control" name="username" id="mobile" placeholder="<?php echo $username?>" title="<?php echo $username?>">
                               </div>
                           </div>
