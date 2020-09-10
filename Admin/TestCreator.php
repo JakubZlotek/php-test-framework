@@ -1,6 +1,4 @@
 <?php
-@session_start();
-
 require 'http://testy.jajuwa.pl/Config.php';
 
 ?>
