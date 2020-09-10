@@ -12,10 +12,10 @@ session_start();
 </head>
 <body>
     <center>
-    <?php require 'http://testy.jajuwa.pl/Includes/Nav.php'; ?>
+    <?php include 'http://testy.jajuwa.pl/Includes/Nav.php'; ?>
         <div class="content wrapper flex-grow-1 col-sm-10 col-md-8 col-lg-4">
         <form method="post" enctype="multipart/form-data">
-        <?php require 'http://testy.jajuwa.pl/Includes/Body.php'; ?>
+        <?php include 'http://testy.jajuwa.pl/Includes/Body.php'; ?>
                 <div class="card text-center">
                     <div class="card-header"><p class="h4">KREATOR PYTAŃ</p></div>
                         <div class="card-body">
