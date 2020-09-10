@@ -1,5 +1,5 @@
 <?php
-include 'http://testy.jajuwa.pl/Config.php';
+require 'http://testy.jajuwa.pl/Config.php';
 ?>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -26,7 +26,6 @@ include 'http://testy.jajuwa.pl/Config.php';
               <a class="dropdown-item" href="#">Another action</a>
           </li>';
       }
-
       ?>
     </ul>
       <a class="btn btn-outline-success" href="http://testy.jajuwa.pl/logout.php" role="button">Wyloguj się</a>

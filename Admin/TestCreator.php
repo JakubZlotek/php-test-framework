@@ -1,21 +1,21 @@
 <?php
 session_start();
-include 'http://testy.jajuwa.pl/Config.php';
+require 'http://testy.jajuwa.pl/Config.php';
 
 ?>
 <!DOCTYPE html>
 <html lang="PL">
 <head>
     <meta charset="UTF-8">
-    <?php include 'http://testy.jajuwa.pl/Includes/Head.php'?>
+    <?php require 'http://testy.jajuwa.pl/Includes/Head.php'; ?>
     <title>Kreator zadań</title>
 </head>
 <body>
     <center>
-    <?php include 'http://testy.jajuwa.pl/Includes/Nav.php'?>
+    <?php require 'http://testy.jajuwa.pl/Includes/Nav.php'; ?>
         <div class="content wrapper flex-grow-1 col-sm-10 col-md-8 col-lg-4">
         <form method="post" enctype="multipart/form-data">
-        <?php include 'http://testy.jajuwa.pl/Includes/Body.php' ?>
+        <?php require 'http://testy.jajuwa.pl/Includes/Body.php'; ?>
                 <div class="card text-center">
                     <div class="card-header"><p class="h4">KREATOR PYTAŃ</p></div>
                         <div class="card-body">
@@ -89,7 +89,7 @@ include 'http://testy.jajuwa.pl/Config.php';
         </div>
     </center>
     <footer>
-        <?php include 'http://testy.jajuwa.pl/Includes/Footer.php'?>
+        <?php require 'http://testy.jajuwa.pl/Includes/Footer.php'?>
     </footer>
 </body>
 </html>
