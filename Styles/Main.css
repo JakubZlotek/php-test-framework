@@ -137,3 +137,6 @@ body.fade-out {
 .input-group-text {
     width: 100% !important;
 }
+.element {
+    margin-bottom: 20px;
+}
