@@ -74,18 +74,10 @@ include '../Config.php';
                             </div>
                             <div class="element">
                                 <div class="input-group-prepend input-group-prepend-custom">
-                                    <span class="input-group-text" id=""><i class="far fa-square"></i>Odpowiedź 4</span>
+                                <span class="input-group-text" id="" style="width:5%"><i class="far fa-square"></i></span><span class="input-group-text" id="" style="width:95% !important">Odpowiedź 4</span>
                                 </div>
                                     <div class="input-group input-check">
                                     <input type="text" class="form-control" name="answer4" placeholder="Odpowiedź 4" required>
-                                </div>
-                            </div>
-                            <div class="element">
-                                <div class="input-group-prepend input-group-prepend-custom">
-                                    <span class="input-group-text" id=""><i class="far fa-square"></i>Prawidłowa Odpowiedź</span>
-                                </div>
-                                    <div class="input-group input-check">
-                                    <input type="text" class="form-control" name="answer4" placeholder="Prawidłowa odpowiedź" required>
                                 </div>
                             </div>
                         </div>
