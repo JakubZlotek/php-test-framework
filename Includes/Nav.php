@@ -1,5 +1,5 @@
 <?php
-include '../Config.php' 
+include 'http://testy.jajuwa.pl/Config.php';
 ?>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">

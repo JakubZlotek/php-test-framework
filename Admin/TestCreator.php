@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../Config.php';
+include 'http://testy.jajuwa.pl/Config.php';
 
 ?>
 <!DOCTYPE html>
