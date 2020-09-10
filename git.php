@@ -1,4 +1,4 @@
 <?php
-$output = shell_exec('C:\Users\Administrator\Desktop\aktualizacja_repo.bat')
+$output = shell_exec('git pull https://f79c32b345bc433f52bc2aa628579a20ce149c74@github.com/jakubzlotek/php-test-framework.git')
 echo "<pre>$output</pre>";
 ?>
