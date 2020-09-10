@@ -7,7 +7,7 @@ include '../Config.php';
 <html lang="PL">
 <head>
     <meta charset="UTF-8">
-    <?php include 'http://testy.jajuwa.pl/Includes/Head.html'?>
+    <?php include 'http://testy.jajuwa.pl/Includes/Head.php'?>
     <title>Kreator zadań</title>
 </head>
 <body>
@@ -129,7 +129,7 @@ include '../Config.php';
         </div>
     </center>
     <footer>
-        <?php include 'http://testy.jajuwa.pl/Includes/Footer.html'?>
+        <?php include 'http://testy.jajuwa.pl/Includes/Footer.php'?>
     </footer>
 </body>
 </html>
