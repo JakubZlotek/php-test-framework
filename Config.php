@@ -1,11 +1,12 @@
 <?php
 @session_start();
-    $host = $_SERVER['HTTP_HOST'] . "/";
-    $inc = "/Includes/";
-    $img = "/Img/";
-    $css = "/Styles/";
-    $admin = "/Admin/";
-    $serverside = "/ServerSide/";
+    
+    $host = "http://" . $_SERVER['HTTP_HOST'] . "/";
+    $inc = "Includes/";
+    $img = "Img/";
+    $css = "Styles/";
+    $admin = "Admin/";
+    $serverside = "ServerSide/";
     //$_SERVER['DOCUMENT_ROOT']
 
     define("hostname", "localhost");

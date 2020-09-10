@@ -4,7 +4,7 @@ html {
 
 body {
   background-color: #fff;
-  transition: 4s opacity;
+  transition: 1.5s opacity;
 }
 
 body.fade-out {

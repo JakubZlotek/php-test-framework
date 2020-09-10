@@ -1,6 +1,7 @@
 <?php
+include 'Config.php';
 // Initialize the session
-session_start();
+@session_start();
 
 // Check if the user is logged in, if not then redirect him to login page
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
@@ -33,7 +34,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="first-slide" src="img\jumbotron\b1.jpg" alt="First slide">
+        <img class="first-slide" src="Img\jumbotron\b1.jpg" alt="First slide">
         <div class="container">
           <div class="carousel-caption text-left">
             <h1>Example headline.</h1>
@@ -43,7 +44,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         </div>
       </div>
       <div class="carousel-item">
-        <img class="second-slide" src="img\jumbotron\b2.jpg" alt="Second slide">
+        <img class="second-slide" src="Img\jumbotron\b2.jpg" alt="Second slide">
         <div class="container">
           <div class="carousel-caption">
             <h1>Another example headline.</h1>
@@ -53,7 +54,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         </div>
       </div>
       <div class="carousel-item">
-        <img class="third-slide" src="img\jumbotron\b3.jpg" alt="Third slide">
+        <img class="third-slide" src="Img\jumbotron\b3.jpg" alt="Third slide">
         <div class="container">
           <div class="carousel-caption text-right">
             <h1>One more for good measure.</h1>
