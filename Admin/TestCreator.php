@@ -30,7 +30,7 @@ include '../Config.php';
                             ?>
                             <div class="element">
                                 <div class="input-group-prepend input-group-prepend-custom">
-                                    <span class="input-group-text1" id="">Numer zadania</span>
+                                    <span class="input-group-text input-group-text1" id="">Numer zadania</span>
                                 </div>
                                 <div class="input-group input-check">
                                     <select class="form-control" id="users-veryfing" name="TaskNumber" required>
@@ -53,7 +53,7 @@ include '../Config.php';
 
                             <div class="element">
                                 <div class="input-group-prepend input-group-prepend-custom">
-                                    <span class="input-group-text1" id="">Tytuł</span>
+                                    <span class="input-group-text input-group-text1" id="">Tytuł</span>
                                 </div>
                                     <div class="input-group input-check">
                                     <input type="text" class="form-control" name="Title" placeholder="Zadanie 03" required>
@@ -62,7 +62,7 @@ include '../Config.php';
 
                             <div class="element">
                                 <div class="input-group-prepend input-group-prepend-custom">
-                                    <span class="input-group-text1" id="">Treść zadania</span>
+                                    <span class="input-group-text input-group-text1" id="">Treść zadania</span>
                                 </div>
                                     <div class="input-group input-check">
                                     <textarea class="Size" name="Content" id="editor"></textarea>
@@ -97,7 +97,7 @@ include '../Config.php';
 
                             <div class="element">
                                 <div class="input-group-prepend input-group-prepend-custom">
-                                    <span class="input-group-text1" id="">Lokalizacja</span>
+                                    <span class="input-group-text input-group-text1" id="">Lokalizacja</span>
                                 </div>
                                     <div class="input-group input-check">
                                     <input type="text" class="form-control" name="Localization" placeholder="Kościół" required>
@@ -106,7 +106,7 @@ include '../Config.php';
 
                             <div class="element">
                                 <div class="input-group-prepend input-group-prepend-custom">
-                                    <span class="input-group-text1" id="">Pytanie</span>
+                                    <span class="input-group-text input-group-text1" id="">Pytanie</span>
                                 </div>
                                     <div class="input-group input-check">
                                     <textarea class="Size" name="SecondText" id="editor1"></textarea>
@@ -115,7 +115,7 @@ include '../Config.php';
 
                             <div class="element">
                                 <div class="input-group-prepend input-group-prepend-custom">
-                                    <span class="input-group-text1" id="">Kod Zadania</span>
+                                    <span class="input-group-text input-group-text1" id="">Kod Zadania</span>
                                 </div>
                                     <div class="input-group input-check">
                                     <input type="text" class="form-control" name="AnswerToTheTask" placeholder="LEGO" required>
