@@ -29,7 +29,7 @@ include '../Config.php';
                             ?>
                             <div class="element">
                                 <div class="input-group-prepend input-group-prepend-custom">
-                                    <span class="input-group-text" id="">Pytanie</span>
+                                    <span class="input-group-text" id=""><i class="fas fa-question"></i>Pytanie</span>
                                 </div>
                                     <div class="input-group input-check">
                                     <textarea class="Size" name="Content" id="editor"></textarea>
@@ -50,7 +50,7 @@ include '../Config.php';
 
                             <div class="element">
                                 <div class="input-group-prepend input-group-prepend-custom">
-                                    <span class="input-group-text" id="">Odpowiedź 1</span>
+                                    <span class="input-group-text" id=""><i class="far fa-square"></i>Odpowiedź 1</span>
                                 </div>
                                     <div class="input-group input-check">
                                     <input type="text" class="form-control" name="answer1" placeholder="Odpowiedź 1" required>
@@ -58,7 +58,7 @@ include '../Config.php';
                             </div>
                             <div class="element">
                                 <div class="input-group-prepend input-group-prepend-custom">
-                                    <span class="input-group-text" id="">Odpowiedź 2</span>
+                                    <span class="input-group-text" id=""><i class="far fa-square"></i>Odpowiedź 2</span>
                                 </div>
                                     <div class="input-group input-check">
                                     <input type="text" class="form-control" name="answer2" placeholder="Odpowiedź 2" required>
@@ -66,7 +66,7 @@ include '../Config.php';
                             </div>
                             <div class="element">
                                 <div class="input-group-prepend input-group-prepend-custom">
-                                    <span class="input-group-text" id="">Odpowiedź 3</span>
+                                    <span class="input-group-text" id=""><i class="far fa-square"></i>Odpowiedź 3</span>
                                 </div>
                                     <div class="input-group input-check">
                                     <input type="text" class="form-control" name="answer3" placeholder="Odpowiedź 3" required>
@@ -74,10 +74,18 @@ include '../Config.php';
                             </div>
                             <div class="element">
                                 <div class="input-group-prepend input-group-prepend-custom">
-                                    <span class="input-group-text" id="">Odpowiedź 4</span>
+                                    <span class="input-group-text" id=""><i class="far fa-square"></i>Odpowiedź 4</span>
                                 </div>
                                     <div class="input-group input-check">
                                     <input type="text" class="form-control" name="answer4" placeholder="Odpowiedź 4" required>
+                                </div>
+                            </div>
+                            <div class="element">
+                                <div class="input-group-prepend input-group-prepend-custom">
+                                    <span class="input-group-text" id=""><i class="far fa-square"></i>Prawidłowa Odpowiedź</span>
+                                </div>
+                                    <div class="input-group input-check">
+                                    <input type="text" class="form-control" name="answer4" placeholder="Prawidłowa odpowiedź" required>
                                 </div>
                             </div>
                         </div>
