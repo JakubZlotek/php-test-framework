@@ -16,7 +16,7 @@ require 'http://testy.jajuwa.pl/Config.php';
       </li>
 
       <?php
-      if ($_SESSION["isadmin"] == 1) {
+      if ($_SESSION["isadmin"] === TRUE) {
           echo'<li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="fas fa-user-cog"></i>
