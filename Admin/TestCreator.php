@@ -41,27 +41,44 @@ include '../Config.php';
                                 <input type="checkbox" class="form-check-input" id="Checkbox1" name="Checkbox1" onclick="Check1()">
                                 <label class="form-check-label form-check-label-custom" for="Checkbox1">Zdjęcie do zadania</label>
                             </div>
-
                             <div class="element show" id="show1">
                                 <div class="custom-file">
                                     <input type="file" class="filestyle custom-file-input" name="fileToUpload" id="fileToUpload">
                                     <label class="custom-file-label" for="fileToUpload" aria-describedby="inputGroupFileAddon02">Wybierz Plik</label>
                                 </div>
-                                <select class="form-control control" id="select1" name="fileToUpload1" >
-                                    <option value="" disable default hidden>Wybierz kolejność:</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                </select>
                             </div>
+
 
                             <div class="element">
                                 <div class="input-group-prepend input-group-prepend-custom">
-                                    <span class="input-group-text" id="">Kod Zadania</span>
+                                    <span class="input-group-text" id="">Odpowiedź 1</span>
                                 </div>
                                     <div class="input-group input-check">
-                                    <input type="text" class="form-control" name="AnswerToTheTask" placeholder="LEGO" required>
+                                    <input type="text" class="form-control" name="answer1" placeholder="Odpowiedź 1" required>
+                                </div>
+                            </div>
+                            <div class="element">
+                                <div class="input-group-prepend input-group-prepend-custom">
+                                    <span class="input-group-text" id="">Odpowiedź 2</span>
+                                </div>
+                                    <div class="input-group input-check">
+                                    <input type="text" class="form-control" name="answer2" placeholder="Odpowiedź 2" required>
+                                </div>
+                            </div>
+                            <div class="element">
+                                <div class="input-group-prepend input-group-prepend-custom">
+                                    <span class="input-group-text" id="">Odpowiedź 3</span>
+                                </div>
+                                    <div class="input-group input-check">
+                                    <input type="text" class="form-control" name="answer3" placeholder="Odpowiedź 3" required>
+                                </div>
+                            </div>
+                            <div class="element">
+                                <div class="input-group-prepend input-group-prepend-custom">
+                                    <span class="input-group-text" id="">Odpowiedź 4</span>
+                                </div>
+                                    <div class="input-group input-check">
+                                    <input type="text" class="form-control" name="answer4" placeholder="Odpowiedź 4" required>
                                 </div>
                             </div>
                         </div>
