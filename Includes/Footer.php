@@ -3,14 +3,6 @@
     <div class="col-12 col-md">
       <img class="mb-2" src="http://testy.jajuwa.pl/Img/logo.png" alt="" width="24" height="24">
       <small class="d-block mb-3 text-muted">&copy; 2019-2020</small>
-      <small class="d-block mb-3 text-muted">Jest już nas:
-      <?php
-      include '../Config.php';
-      $sth =  $conn->prepare('SELECT count(*) from users');
-      $sth->execute();
-      print_r($sth->fetchAll());
-      mysqli_close($conn);
-      ?>
     </small>
     </div>
     <div class="col-6 col-md">
