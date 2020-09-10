@@ -34,7 +34,7 @@ session_start();
 
       require_once "../config.php";
 
-      $sql = "SELECT id, imie, nazwisko, created_at, avatar, admin FROM users ORDER BY `id` ASC";
+      $sql = "SELECT id, name, surname, created_at, avatar, admin FROM users ORDER BY `id` ASC";
       $result = $conn->query($sql);
       if ($result->num_rows > 0) {
       // output data of each row
@@ -48,7 +48,7 @@ session_start();
 
         echo '<div class="col-md-4"><div class="card mb-4 shadow-sm">
           <div class="card-header">'. $text .'
-            <h4 class="my-0 font-weight-normal">' . $row["imie"]. " ". $row["nazwisko"]. '</h4>
+            <h4 class="my-0 font-weight-normal">' . $row["name"]. " ". $row["surname"]. '</h4>
           </div>
           <div class="card-body">
           <img src="' . $row["avatar"]. '" style = "width: 160px;height: 160px; border-radius: 100%">

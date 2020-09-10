@@ -8,15 +8,15 @@ if (isset($_GET['userid'])) {
 
 require_once "../config.php";
 
-$sql = "SELECT id, username, created_at, avatar, imie, nazwisko, email FROM users WHERE id = '" . $userid . "'";
+$sql = "SELECT id, username, created_at, avatar, name, surname, email FROM users WHERE id = '" . $userid . "'";
 $result = $conn->query($sql);
 while($row = $result->fetch_assoc()) {
    $id = $row["id"];
    $username = $row["username"];
    $created_at = $row["created_at"];
    $avatar = $row["avatar"];
-   $imie = $row["imie"];
-   $nazwisko = $row["nazwisko"];
+   $imie = $row["name"];
+   $nazwisko = $row["surname"];
    $email = $row["email"];
 };
 
@@ -34,14 +34,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     if(!empty(trim($_POST["first_name"]))){
       $imie = trim($_POST["first_name"]);
-      $stmt = $conn->prepare("UPDATE users SET imie = ? WHERE id = ?");
+      $stmt = $conn->prepare("UPDATE users SET name = ? WHERE id = ?");
       $stmt->bind_param("sss", $imie, $id);
       $stmt->execute();
     };
 
     if(!empty(trim($_POST["last_name"]))){
       $nazwisko = trim($_POST["last_name"]);
-      $stmt = $conn->prepare("UPDATE users SET nazwisko = ? WHERE id = ?");
+      $stmt = $conn->prepare("UPDATE users SET surname = ? WHERE id = ?");
       $stmt->bind_param("sss", $nazwisko, $id);
       $stmt->execute();
     };
