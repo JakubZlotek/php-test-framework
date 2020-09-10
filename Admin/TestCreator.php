@@ -30,50 +30,11 @@ include '../Config.php';
                             ?>
                             <div class="element">
                                 <div class="input-group-prepend input-group-prepend-custom">
-                                    <span class="input-group-text" id="">Numer zadania</span>
-                                </div>
-                                <div class="input-group input-check">
-                                    <select class="form-control" id="users-veryfing" name="TaskNumber" required>
-                                        <?php
-                                        if ($score->num_rows > 0) {
-                                            while($row = $score->fetch_assoc()) {
-                                                if ($row['NumberOfTheTask'] < 100) {
-                                                    $row['NumberOfTheTask'] = substr($row['NumberOfTheTask'], 1);
-                                                }
-                                                echo "<option value='". $row['NumberOfTheTask'] ."' required>". $row['NumberOfTheTask'] ."</option>";
-                                            }
-                                        }
-                                        else {
-                                            echo "0 Tasks";
-                                        }
-                                        ?>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="element">
-                                <div class="input-group-prepend input-group-prepend-custom">
-                                    <span class="input-group-text" id="">Tytuł</span>
-                                </div>
-                                    <div class="input-group input-check">
-                                    <input type="text" class="form-control" name="Title" placeholder="Zadanie 03" required>
-                                </div>
-                            </div>
-
-                            <div class="element">
-                                <div class="input-group-prepend input-group-prepend-custom">
-                                    <span class="input-group-text" id="">Treść zadania</span>
+                                    <span class="input-group-text" id="">Pytanie</span>
                                 </div>
                                     <div class="input-group input-check">
                                     <textarea class="Size" name="Content" id="editor"></textarea>
                                 </div>
-                                <select class="form-control control" name="Content1" required>
-                                    <option value="" disable default hidden>Wybierz kolejność:</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                </select>
                             </div>
 
                             <div class="input-group form-check">
