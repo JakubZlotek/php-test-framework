@@ -1,6 +1,6 @@
 <?php
 
-require_once "../config.php";
+require "../config.php";
 
     $id = trim($_POST["id"]);
     if(!empty(trim($_POST["username"]))){
