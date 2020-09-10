@@ -134,3 +134,7 @@ body.fade-out {
     }
 
 }
+
+.input-group-text {
+    width: 100%;
+}

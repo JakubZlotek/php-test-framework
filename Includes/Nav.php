@@ -1,4 +1,6 @@
-<? include '../Config.php' ?>
+<?php
+include '../Config.php' 
+?>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <img src="http://testy.jajuwa.pl/Img/logo.png" style = "height: 60px; width: 60px; margin-right: 20px;">
@@ -9,7 +11,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="http://testy.jajuwa.pl">Strona Główna<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="http://testy.jajuwa.pl">Strona Główna</a>
       </li>
 
       <?php
