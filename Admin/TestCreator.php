@@ -1,6 +1,6 @@
 <?php
-// Initialize the session
-session_start();
+include '../Config.php';
+@session_start();
 ?>
 
 <!DOCTYPE html>
