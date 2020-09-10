@@ -85,7 +85,12 @@ include '../Config.php';
                                     <span class="input-group-text" id="">Poprawna Odpowiedź</span>
                                 </div>
                                     <div class="input-group input-check">
-                                    <input type="text" class="form-control" name="correct_answer" placeholder="Poprawna Odpowiedź" required>
+                                    <select name="" id="">
+                                        <option value="correct1">Odpowiedź 1</option>
+                                        <option value="correct2">Odpowiedź 2</option>
+                                        <option value="correct3">Odpowiedź 3</option>
+                                        <option value="correct4">Odpowiedź 4</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
