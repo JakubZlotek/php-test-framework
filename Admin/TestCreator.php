@@ -7,7 +7,7 @@ include '../Config.php';
 <html lang="PL">
 <head>
     <meta charset="UTF-8">
-    <?php include APP_DIR_TMP . 'Head.html'?>
+    <?php include 'http://testy.jajuwa.pl/Includes/Head.html'?>
     <title>Kreator zadań</title>
 </head>
 <body>
