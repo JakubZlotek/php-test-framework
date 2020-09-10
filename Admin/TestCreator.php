@@ -7,15 +7,14 @@ session_start();
 <html lang="PL">
 <head>
     <meta charset="UTF-8">
-    <?php require 'http://testy.jajuwa.pl/Includes/Head.php'; ?>
+    <?php include '../Includes/Head.php'?>
     <title>Kreator zadań</title>
 </head>
 <body>
+  <?php include '../Includes/Nav.php'?>
     <center>
-    <?php include 'http://testy.jajuwa.pl/Includes/Nav.php'; ?>
         <div class="content wrapper flex-grow-1 col-sm-10 col-md-8 col-lg-4">
         <form method="post" enctype="multipart/form-data">
-        <?php include 'http://testy.jajuwa.pl/Includes/Body.php'; ?>
                 <div class="card text-center">
                     <div class="card-header"><p class="h4">KREATOR PYTAŃ</p></div>
                         <div class="card-body">
@@ -88,9 +87,8 @@ session_start();
                 </form>
         </div>
     </center>
-    <footer>
-        <?php require 'http://testy.jajuwa.pl/Includes/Footer.php'?>
-    </footer>
+    <?php include '../Includes/Body.php'?>
+    <?php include '../Includes/Footer.php'?>
 </body>
 </html>
     <?php unset($_SESSION["error"]); ?>
