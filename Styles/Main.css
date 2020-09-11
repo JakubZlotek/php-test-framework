@@ -187,14 +187,18 @@ body.fade-out {
   color: rgba(255, 255, 255, .7);
 }
 
+.themecolor{
+  color: rgba(255, 255, 255, .7) !important;;
+}
+
 .themecard{
   background-color: transparent;
-  border: 3px solid rgba(255, 255, 255, .7);
-  color: rgba(255, 255, 255, .7);
+  border: 3px solid rgba(255, 255, 255, .7) !important;;
+  color: rgba(255, 255, 255, .7) !important;;
 }
 
 .themeinput{
   background-color: transparent;
-  border: 3px solid rgba(255, 255, 255, .7);
-  color: rgba(255, 255, 255, .7);
+  border: 2px solid rgba(255, 255, 255, .7) !important;;
+  color: rgba(255, 255, 255, 1) !important;;
 }

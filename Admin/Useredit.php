@@ -59,10 +59,10 @@ mysqli_close($conn);
 
 
             <ul class="list-group">
-              <li class="list-group-item text-muted">User ID: <?php echo $id?></li>
+              <li class="list-group-item text-muted themecolor">User ID: <?php echo $id?></li>
             </ul>
               <ul class="list-group">
-                <li class="list-group-item text-muted">Data Dołączenia:</br> <?php echo $created_at?></li>
+                <li class="list-group-item text-muted themecolor">Data Dołączenia:</br> <?php echo $created_at?></li>
               </ul>
 
 
