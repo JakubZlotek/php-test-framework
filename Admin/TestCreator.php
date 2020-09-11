@@ -54,7 +54,7 @@ include '../Config.php';
                                     <span class="input-group-text" id="">Odpowiedź 1</span>
                                 </div>
                                     <div class="input-group input-check">
-                                    <input type="text" class="form-control" name="answer1" placeholder="Piotr Gustyn" required>
+                                    <input type="text" class="form-control" name="answer1" id="a1" placeholder="Piotr Gustyn" required>
                                 </div>
                             </div>
                             <div class="element">
@@ -62,7 +62,7 @@ include '../Config.php';
                                     <span class="input-group-text" id="">Odpowiedź 2</span>
                                 </div>
                                     <div class="input-group input-check">
-                                    <input type="text" class="form-control" name="answer2" placeholder="Jan Paweł II" required>
+                                    <input type="text" class="form-control" name="answer2" id="a2" placeholder="Jan Paweł II" required>
                                 </div>
                             </div>
                             <div class="element">
@@ -70,7 +70,7 @@ include '../Config.php';
                                     <span class="input-group-text" id="">Odpowiedź 3</span>
                                 </div>
                                     <div class="input-group input-check">
-                                    <input type="text" class="form-control" name="answer3" placeholder="Krzysztof Landos" required>
+                                    <input type="text" class="form-control" name="answer3" id="a3" placeholder="Krzysztof Landos" required>
                                 </div>
                             </div>
                             <div class="element">
@@ -78,7 +78,7 @@ include '../Config.php';
                                     <span class="input-group-text" id="">Odpowiedź 4</span>
                                 </div>
                                     <div class="input-group input-check">
-                                    <input type="text" class="form-control" name="answer4" placeholder="Anna Słotwińska - Jakóbowska" required>
+                                    <input type="text" class="form-control" name="answer4" id="a4" placeholder="Anna Słotwińska - Jakóbowska" required>
                                 </div>
                             </div>
                             <div class="element">
@@ -96,7 +96,7 @@ include '../Config.php';
                             </div>
                         </div>
                     </div>
-                    <div class="card-footer text-muted"><button class="btn btn-primary btn-lg btn-block" type="submit" name="Submit" value="submit1">Utwórz Zadanie!</button></div>
+                    <div class="card-footer text-muted"><button class="btn btn-primary btn-lg btn-block" type="submit" name="Submit" value="submit1" onclick="exchange()">Utwórz Zadanie!</button></div>
                 </div>
                 </form>
         </div>
@@ -104,5 +104,10 @@ include '../Config.php';
     <?php include '../Includes/Body.php'?>
     <?php include '../Includes/Footer.php'?>
 </body>
+<script>
+    function exchange() {
+        alert($( "a1" ).val());
+    }
+</script>
 </html>
     <?php unset($_SESSION["error"]); ?>
