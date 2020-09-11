@@ -16,4 +16,14 @@ echo $answer3 . "\n";
 echo $answer4 . "\n";
 echo $correct_answer . "\n";
 
+$stmt = $conn->prepare('INSERT INTO Users (Login, Password) VALUES (?, ?) ');
+$stmt->bind_param('ss', $Uzytkownik, $Haslo);
+$stmt->execute();
+$stmt->close();
+
+$error = 'Pomyślnie dodano nowe konto: '.$Uzytkownik.'';
+$_SESSION['error'] = $error;
+
+header("Location: http://testy.jajuwa.pl/Admin/QuestionCreator.php");
+
 ?>
