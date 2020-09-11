@@ -106,7 +106,8 @@ include '../Config.php';
 </body>
 <script>
     function exchange() {
-        alert($( "a1" ).val());
+        var str = $( "a1" ).val();
+        alert(str);
     }
 </script>
 </html>
