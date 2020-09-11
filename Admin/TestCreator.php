@@ -54,7 +54,7 @@ include '../Config.php';
                                     <span class="input-group-text" id="">Odpowiedź 1</span>
                                 </div>
                                     <div class="input-group input-check">
-                                    <input type="text" class="form-control" name="answer1" placeholder="Odpowiedź 1" required>
+                                    <input type="text" class="form-control" name="answer1" placeholder="Piotr Gustyn" required>
                                 </div>
                             </div>
                             <div class="element">
@@ -62,7 +62,7 @@ include '../Config.php';
                                     <span class="input-group-text" id="">Odpowiedź 2</span>
                                 </div>
                                     <div class="input-group input-check">
-                                    <input type="text" class="form-control" name="answer2" placeholder="Odpowiedź 2" required>
+                                    <input type="text" class="form-control" name="answer2" placeholder="Jan Paweł II" required>
                                 </div>
                             </div>
                             <div class="element">
@@ -70,7 +70,7 @@ include '../Config.php';
                                     <span class="input-group-text" id="">Odpowiedź 3</span>
                                 </div>
                                     <div class="input-group input-check">
-                                    <input type="text" class="form-control" name="answer3" placeholder="Odpowiedź 3" required>
+                                    <input type="text" class="form-control" name="answer3" placeholder="Krzysztof Landos" required>
                                 </div>
                             </div>
                             <div class="element">
@@ -78,7 +78,7 @@ include '../Config.php';
                                     <span class="input-group-text" id="">Odpowiedź 4</span>
                                 </div>
                                     <div class="input-group input-check">
-                                    <input type="text" class="form-control" name="answer4" placeholder="Odpowiedź 4" required>
+                                    <input type="text" class="form-control" name="answer4" placeholder="Anna Słotwińska - Jakóbowska" required>
                                 </div>
                             </div>
                             <div class="element">
