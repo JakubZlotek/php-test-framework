@@ -153,7 +153,7 @@ body.fade-out {
 }
 
 .credits{
-  background-color: #8d0da3;
+  background-color: aquamarine !important;
   text-align: center;
   color: #fff;
 }
