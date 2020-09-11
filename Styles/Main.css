@@ -145,15 +145,8 @@ body.fade-out {
     margin-top: 20px;
 }
 
-.credits {
-  background-color: #cc00cc;
+.footerstyle{
   color: #fff;
-  text-align: center;
-  height: 100px;
-  vertical-align: middle;
-}
-
-.themebackground{
   background-color: #330033;
-  color: #fff;
+  width: 100%;
 }
