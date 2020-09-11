@@ -3,11 +3,13 @@
 html {
     background-color: #fff;
         font-family: 'Source Sans Pro', sans-serif;
+        font-weight: normal;
 }
 
 body {
   background-color: #fff;
       font-family: 'Source Sans Pro', sans-serif;
+      font-weight: normal;
   transition: 1.5s opacity;
 }
 
