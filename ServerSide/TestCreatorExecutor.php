@@ -1,5 +1,7 @@
 <?php
 
+include 'http://testy.jajuwa.pl/Config.php';
+
 $question = $_POST['question'];
 $answer1 = $_POST['answer1'];
 $answer2 = $_POST['answer2'];
