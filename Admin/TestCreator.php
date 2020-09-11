@@ -112,14 +112,11 @@ include '../Config.php';
             var str2 = $("#a2").val();
             var str3 = $("#a3").val();
             var str4 = $("#a4").val();
-            var option1 = $('<option></option>').attr("value", str1).text("Odpowiedź 1");
-            $("#o1").empty().append(option);
-            var option2 = $('<option></option>').attr("value", str2).text("Odpowiedź 2");
-            $("#o2").empty().append(option);
-            var option3 = $('<option></option>').attr("value", str3).text("Odpowiedź 3");
-            $("#o3").empty().append(option);
-            var option4 = $('<option></option>').attr("value", str4).text("Odpowiedź 4");
-            $("#o4").empty().append(option);
+        
+            $("#o1").val(str1);
+            $("#o2").val(str2);
+            $("#o3").val(str3);
+            $("#o4").val(str4);
         });
     });
 </script>
