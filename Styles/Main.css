@@ -186,3 +186,15 @@ body.fade-out {
   text-align: center;
   color: rgba(255, 255, 255, .7);
 }
+
+.themecard{
+  background-color: transparent;
+  border: 3px solid rgba(255, 255, 255, .7);
+  color: rgba(255, 255, 255, .7);
+}
+
+.themeinput{
+  background-color: transparent;
+  border: 3px solid rgba(255, 255, 255, .7);
+  color: rgba(255, 255, 255, .7);
+}

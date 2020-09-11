@@ -35,7 +35,7 @@ $score = $conn->query($search);
                                     <span class="input-group-text">Test</span>
                                 </div>
                                 <div class="input-group input-check">
-                                    <select class="form-control" id="users-veryfing" name="test" required>
+                                    <select class="form-control themeinput" id="users-veryfing" name="test" required>
                                         <?php
                                         if ($score->num_rows > 0) {
                                             while($row = $score->fetch_assoc()) {
@@ -56,7 +56,7 @@ $score = $conn->query($search);
                                 </div>
                                     <div class="input-group input-check">
                                     <!--<textarea class="Size" name="Content" id="editor"></textarea>-->
-                                    <input type="text" class="form-control" name="question" placeholder="Kto wypowiedział słynną sentencję: „A po co wybierać? Najlepiej wziąć obie” "required>
+                                    <input type="text" class="form-control themeinput" name="question" placeholder="Kto wypowiedział słynną sentencję: „A po co wybierać? Najlepiej wziąć obie” "required>
                                 </div>
                             </div>
 
@@ -77,7 +77,7 @@ $score = $conn->query($search);
                                     <span class="input-group-text" id="">Odpowiedź 1</span>
                                 </div>
                                     <div class="input-group input-check">
-                                    <input type="text" class="form-control" name="answer1" id="a1" placeholder="Piotr Gustyn" required>
+                                    <input type="text" class="form-control themeinput" name="answer1" id="a1" placeholder="Piotr Gustyn" required>
                                 </div>
                             </div>
                             <div class="element">
@@ -85,7 +85,7 @@ $score = $conn->query($search);
                                     <span class="input-group-text" id="">Odpowiedź 2</span>
                                 </div>
                                     <div class="input-group input-check">
-                                    <input type="text" class="form-control" name="answer2" id="a2" placeholder="Jan Paweł II" required>
+                                    <input type="text" class="form-control themeinput" name="answer2" id="a2" placeholder="Jan Paweł II" required>
                                 </div>
                             </div>
                             <div class="element">
@@ -93,7 +93,7 @@ $score = $conn->query($search);
                                     <span class="input-group-text" id="">Odpowiedź 3</span>
                                 </div>
                                     <div class="input-group input-check">
-                                    <input type="text" class="form-control" name="answer3" id="a3" placeholder="Krzysztof Landos" required>
+                                    <input type="text" class="form-control themeinput" name="answer3" id="a3" placeholder="Krzysztof Landos" required>
                                 </div>
                             </div>
                             <div class="element">
@@ -101,7 +101,7 @@ $score = $conn->query($search);
                                     <span class="input-group-text" id="">Odpowiedź 4</span>
                                 </div>
                                     <div class="input-group input-check">
-                                    <input type="text" class="form-control" name="answer4" id="a4" placeholder="Anna Słotwińska - Jakóbowska" required>
+                                    <input type="text" class="form-control themeinput" name="answer4" id="a4" placeholder="Anna Słotwińska - Jakóbowska" required>
                                 </div>
                             </div>
                             <div class="element">

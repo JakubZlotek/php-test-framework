@@ -80,14 +80,14 @@ mysqli_close($conn);
 
                               <div class="col-xs-6">
                                   <label for="first_name"><h4>Imie: </h4></label>
-                                  <input type="text" class="form-control" name="first_name" id="first_name" placeholder="<?php echo $imie?>">
+                                  <input type="text" class="form-control themeinput" name="first_name" id="first_name" placeholder="<?php echo $imie?>">
                               </div>
                           </div>
                           <div class="form-group">
 
                               <div class="col-xs-6">
                                 <label for="last_name"><h4>Nazwisko: </h4></label>
-                                  <input type="text" class="form-control" name="last_name" id="last_name" placeholder="<?php echo $nazwisko?>">
+                                  <input type="text" class="form-control themeinput" name="last_name" id="last_name" placeholder="<?php echo $nazwisko?>">
                               </div>
                           </div>
 
@@ -96,14 +96,14 @@ mysqli_close($conn);
                               <div class="col-xs-6">
                                  <label for="username"><h4>Nazwa Użytkownika</h4></label>
                                  <input type="hidden" id="id" name="id" value="<?php echo $id?>">
-                                  <input type="text" class="form-control" name="username" id="mobile" placeholder="<?php echo $username?>" title="<?php echo $username?>">
+                                  <input type="text" class="form-control themeinput" name="username" id="mobile" placeholder="<?php echo $username?>" title="<?php echo $username?>">
                               </div>
                           </div>
                           <div class="form-group">
 
                               <div class="col-xs-6">
                                   <label for="email"><h4>Email</h4></label>
-                                  <input type="email" class="form-control" name="email" id="email" placeholder="<?php echo $email?>">
+                                  <input type="email" class="form-control themeinput" name="email" id="email" placeholder="<?php echo $email?>">
                               </div>
                           </div>
 

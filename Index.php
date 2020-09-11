@@ -105,9 +105,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <img class="mb-4" src="img/logo.png" alt="" width="72" height="72">
     <h1 class="h3 mb-3 font-weight-normal">Prosze sie zalogować</h1>
     <label for="inputUsername" class="sr-only">Nazwa Użytkownika</label>
-    <input type="text" id="inputUsername" name="username" class="form-control" placeholder="Nazwa Użytkownika" required autofocus>
+    <input type="text" id="inputUsername" name="username" class="form-control themeinput" placeholder="Nazwa Użytkownika" required autofocus>
     <label for="inputPassword" class="sr-only">Hasło</label>
-    <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Hasło" required>
+    <input type="password" name="password" id="inputPassword" class="form-control themeinput" placeholder="Hasło" required>
     <button class="btn btn-lg btn-primary btn-block" type="submit">Zaloguj się</button>
     <p class="mt-5 mb-3 text-muted">&copy; 2020-2020</p>
     <p>Nie masz konta? <a href="register.php">Zarejestruj się</a>.</p>
