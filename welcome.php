@@ -78,10 +78,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <div class="container">
 
 
-    
+
     <?php include 'Includes/Body.php'?>
-    <?php include 'Includes/Footer.php'?>
   </div>
+  <?php include 'Includes/Footer.php'?>
 
 
   <script>
