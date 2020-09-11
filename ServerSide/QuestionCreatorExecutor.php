@@ -1,6 +1,6 @@
 <?php
 
-include 'http://testy.jajuwa.pl/Config.php';
+include '../Config.php';
 
 $exam_id = $_POST['test'];
 $question = $_POST['question'];
