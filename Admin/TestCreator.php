@@ -87,10 +87,10 @@ include '../Config.php';
                                 </div>
                                     <div class="input-group input-check">
                                     <select class="custom-select" name="correct_answer" id="answer" required>
-                                        <option value="correct1">Odpowiedź 1</option>
-                                        <option value="correct2">Odpowiedź 2</option>
-                                        <option value="correct3">Odpowiedź 3</option>
-                                        <option value="correct4">Odpowiedź 4</option>
+                                        <option value="correct1" id="o1">Odpowiedź 1</option>
+                                        <option value="correct2" id="o2">Odpowiedź 2</option>
+                                        <option value="correct3" id="o3">Odpowiedź 3</option>
+                                        <option value="correct4" id="o4">Odpowiedź 4</option>
                                     </select>
                                 </div>
                             </div>
@@ -108,8 +108,18 @@ include '../Config.php';
     $(document).ready(function(){
         // Get value on button click and show alert
         $("#submit").click(function(){
-            var str = $("#a1").val();
-            alert(str);
+            var str1 = $("#a1").val();
+            var str2 = $("#a2").val();
+            var str3 = $("#a3").val();
+            var str4 = $("#a4").val();
+            var option1 = $('<option></option>').attr("value", str1);
+            $("#o1").append(option);
+            var option2 = $('<option></option>').attr("value", str2);
+            $("#o2").append(option);
+            var option3 = $('<option></option>').attr("value", str3);
+            $("#o3").append(option);
+            var option4 = $('<option></option>').attr("value", str4);
+            $("#o4").append(option);
         });
     });
 </script>
