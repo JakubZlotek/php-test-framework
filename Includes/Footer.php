@@ -1,4 +1,4 @@
-<footer class="pt-4 pt-md-5 border-top">
+<footer class="pt-4 my-md-0 pt-md-5 border-top">
   <div class="row credits">
     &copy; Jakub Złotek & Daniel Kamiński
   </div>
