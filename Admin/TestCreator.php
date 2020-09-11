@@ -14,7 +14,7 @@ include '../Config.php';
   <?php include '../Includes/Nav.php'?>
     <center>
         <div class="content wrapper flex-grow-1 col-sm-10 col-md-8 col-lg-4">
-        <form method="post" enctype="multipart/form-data">
+        <form action="http://testy.jajuwa.pl/ServerSide/TestCreatorExecutor.php" method="post" enctype="multipart/form-data">
                 <div class="card text-center">
                     <div class="card-header"><p class="h4">KREATOR PYTAŃ</p></div>
                         <div class="card-body">
@@ -33,7 +33,7 @@ include '../Config.php';
                                 </div>
                                     <div class="input-group input-check">
                                     <!--<textarea class="Size" name="Content" id="editor"></textarea>-->
-                                    <input type="text" class="form-control" name="question" placeholder="Pytanie" required>
+                                    <input type="text" class="form-control" name="question" placeholder="Kto wypowiedział słynną sentencję: „A po co wybierać? Najlepiej wziąć obie” "required>
                                 </div>
                             </div>
 
