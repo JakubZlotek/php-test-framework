@@ -1,3 +1,5 @@
 <footer class="footerstyle">
-cc
+<div class="credits">
+  &copy; Jakub Złotek & Daniel Kamiński
+</div>
 </footer>
