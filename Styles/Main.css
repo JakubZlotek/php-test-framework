@@ -149,4 +149,11 @@ body.fade-out {
   background-color: #cc00cc;
   color: #fff;
   text-align: center;
+  height: 100px;
+  vertical-align: middle;
+}
+
+.themebackground{
+  background-color: #330033;
+  color: #fff;
 }
