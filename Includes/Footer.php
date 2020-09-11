@@ -2,7 +2,7 @@
 <div class="credits">
   &copy; Jakub Złotek & Daniel Kamiński
 </div>
-<div class="row">
+<div class="content-fluid">
 <div class="col-md-6">
 sdsadas
 </div>
