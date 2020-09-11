@@ -32,11 +32,12 @@ include '../Config.php';
                                     <span class="input-group-text" id="">Pytanie</span>
                                 </div>
                                     <div class="input-group input-check">
-                                    <textarea class="Size" name="Content" id="editor"></textarea>
+                                    <!--<textarea class="Size" name="Content" id="editor"></textarea>-->
+                                    <input type="text" class="form-control" name="question" placeholder="Pytanie" required>
                                 </div>
                             </div>
 
-                            <div class="input-group form-check">
+                            <!-- <div class="input-group form-check">
                                 <input type="checkbox" class="form-check-input" id="Checkbox1" name="Checkbox1" onclick="Check1()">
                                 <label class="form-check-label form-check-label-custom" for="Checkbox1">Zdjęcie do zadania</label>
                             </div>
@@ -45,7 +46,7 @@ include '../Config.php';
                                     <input type="file" class="filestyle custom-file-input" name="fileToUpload" id="fileToUpload">
                                     <label class="custom-file-label" for="fileToUpload" aria-describedby="inputGroupFileAddon02">Wybierz Plik</label>
                                 </div>
-                            </div>
+                            </div> -->
 
 
                             <div class="element">
