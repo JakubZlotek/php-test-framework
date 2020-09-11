@@ -3,14 +3,14 @@
 
 html {
     background-color: #343a40;
-    color: rgba(255,255,255,.5);
+    color: rgba(255,255,255,.5) !important;;
         font-family: 'Open Sans', sans-serif;
         font-weight: normal;
 }
 
 body {
   background-color: #343a40;
-  color: rgba(255,255,255,.5);
+  color: rgba(255,255,255,.5) !important;;
       font-family: 'Open Sans', sans-serif;
       font-weight: normal;
   transition: 1.5s opacity;
