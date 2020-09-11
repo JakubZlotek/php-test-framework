@@ -35,7 +35,7 @@ $score = $conn->query($search);
                                     <span class="input-group-text">Test</span>
                                 </div>
                                 <div class="input-group input-check">
-                                    <select class="form-control" id="users-veryfing" name="TaskNumber" required>
+                                    <select class="form-control" id="users-veryfing" name="test" required>
                                         <?php
                                         if ($score->num_rows > 0) {
                                             while($row = $score->fetch_assoc()) {
