@@ -1,6 +1,9 @@
 <?php
 include '../Config.php';
 @session_start();
+
+$search = "SELECT * FROM exams";
+$score = $conn->query($search);
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +17,7 @@ include '../Config.php';
   <?php include '../Includes/Nav.php'?>
     <center>
         <div class="content wrapper flex-grow-1 col-sm-10 col-md-8 col-lg-4">
-        <form action="http://testy.jajuwa.pl/ServerSide/TestCreatorExecutor.php" method="post" enctype="multipart/form-data">
+        <form action="http://testy.jajuwa.pl/ServerSide/QuestionCreatorExecutor.php" method="post" enctype="multipart/form-data">
                 <div class="card text-center">
                     <div class="card-header"><p class="h4">KREATOR PYTAŃ</p></div>
                         <div class="card-body">
@@ -27,6 +30,26 @@ include '../Config.php';
                                     echo '</div>';
                                 }
                             ?>
+                            <div class="element">
+                                <div class="input-group-prepend input-group-prepend-custom">
+                                    <span class="input-group-text">Test</span>
+                                </div>
+                                <div class="input-group input-check">
+                                    <select class="form-control" id="users-veryfing" name="TaskNumber" required>
+                                        <?php
+                                        if ($score->num_rows > 0) {
+                                            while($row = $score->fetch_assoc()) {
+                                                echo "<option value='". $row['id'] ."' required>". $row['name'] ."</option>";
+                                            }
+                                        }
+                                        else {
+                                            echo "0 Tasks";
+                                        }
+                                        ?>
+                                    </select>
+                                </div>
+                            </div>
+
                             <div class="element">
                                 <div class="input-group-prepend input-group-prepend-custom">
                                     <span class="input-group-text" id="">Pytanie</span>
