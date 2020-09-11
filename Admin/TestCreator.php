@@ -86,7 +86,7 @@ include '../Config.php';
                                     <span class="input-group-text" id="">Poprawna Odpowiedź</span>
                                 </div>
                                     <div class="input-group input-check">
-                                    <select name="" id="">
+                                    <select class="custom-select" name="correct_answer" id="answer">
                                         <option value="correct1">Odpowiedź 1</option>
                                         <option value="correct2">Odpowiedź 2</option>
                                         <option value="correct3">Odpowiedź 3</option>
