@@ -1,5 +1,5 @@
 <footer>
-<div class="credits">
+<div class="credits fixed-bottom">
   &copy; Jakub Złotek & Daniel Kamiński
 </div>
 
