@@ -96,7 +96,7 @@ include '../Config.php';
                             </div>
                         </div>
                     </div>
-                    <div class="card-footer text-muted"><button class="btn btn-primary btn-lg btn-block" type="submit" name="Submit" value="submit1" onclick="exchange()">Utwórz Zadanie!</button></div>
+                    <div class="card-footer text-muted"><button class="btn btn-primary btn-lg btn-block" type="submit" name="Submit" value="submit" id="submit">Utwórz Zadanie!</button></div>
                 </div>
                 </form>
         </div>
@@ -105,10 +105,13 @@ include '../Config.php';
     <?php include '../Includes/Footer.php'?>
 </body>
 <script>
-    function exchange() {
-        var str = $( "a1" ).text();
-        alert(str);
-    }
+    $(document).ready(function(){
+        // Get value on button click and show alert
+        $("#submit").click(function(){
+            var str = $("#a1").val();
+            alert(str);
+        });
+    });
 </script>
 </html>
     <?php unset($_SESSION["error"]); ?>
