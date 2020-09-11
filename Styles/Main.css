@@ -150,3 +150,9 @@ body.fade-out {
   background-color: #330033;
   width: 100%;
 }
+
+.credits{
+  background-color: #8d0da3;
+  width: 100%;
+  text-align: center;
+}
