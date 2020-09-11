@@ -140,3 +140,7 @@ body.fade-out {
 .element {
     margin-bottom: 20px;
 }
+
+.bg-light {
+    background-color: #f7e8a6 !important;
+}
