@@ -25,7 +25,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <div class="container">
 
 
-
+      <img src="img/banner.png" alt="">
       <div class="card border-0 shadow my-5 contentcard">
         <div class="card-body p-5">
           <h1 class="font-weight-light">Fixed Full Page Background Image</h1>
