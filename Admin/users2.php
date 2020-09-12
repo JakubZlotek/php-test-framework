@@ -38,7 +38,7 @@ session_start();
                     $text = '<t style="color:#228c16" style="margin-bottom: 0">Użytkownik</t>';
                   };
 
-                  echo '<div class="col-md-4"><div class="card themestyle mb-4 shadow-sm">
+                  echo '<div class="col-md-4" style="float: left"><div class="card themestyle mb-4 shadow-sm">
                     <div class="card-header">'. $text .'
                       <h4 class="my-0 font-weight-normal">' . $row["name"]. " ". $row["surname"]. '</h4>
                     </div>
