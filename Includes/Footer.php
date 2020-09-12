@@ -1,6 +1,6 @@
 <footer>
 <div class="credits fixed-bottom">
-  Jakub Złotek & Daniel Kamiński | &copy; 2020-2020 Złotek i Spółka
+  &copy; 2020-2020 | Jakub Złotek & Daniel Kamiński
 </div>
 
 </footer>

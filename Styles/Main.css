@@ -4,6 +4,7 @@ html{
   scroll-behavior: smooth;
 }
 
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: normal;
@@ -13,6 +14,7 @@ body {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  cursor: url("https://testy.jajuwa.pl/img/cursor.png"),auto;
 }
 
 body.fade-out {
