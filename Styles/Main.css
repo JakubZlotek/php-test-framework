@@ -14,7 +14,6 @@ body {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  cursor: url("https://testy.jajuwa.pl/img/cursor.png"),auto;
 }
 
 body.fade-out {
@@ -185,6 +184,6 @@ body.fade-out {
 
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.7) !important;
+  background-color: rgba(0, 0, 0, 0.4) !important;
   color: rgba(255, 255, 255, 1);
 }
