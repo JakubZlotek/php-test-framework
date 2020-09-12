@@ -172,23 +172,7 @@ body.fade-out {
 }
 
 .credits {
-  background-color: #343a40 !important;
+  background-color: rgba(0, 0, 0, 0.5);;
   text-align: center;
-  color: rgba(255, 255, 255, .5);
-}
-
-.themecolor{
-  color: rgba(255, 255, 255, .7) !important;;
-}
-
-.themecard{
-  background-color: transparent;
-  border: 3px solid rgba(255, 255, 255, .7) !important;;
-  color: rgba(255, 255, 255, .7) !important;;
-}
-
-.themeinput{
-  background-color: transparent;
-  border: 2px solid rgba(255, 255, 255, .7) !important;;
-  color: rgba(255, 255, 255, 1) !important;;
+  color: rgba(255, 255, 255, 1);
 }
