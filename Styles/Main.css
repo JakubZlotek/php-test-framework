@@ -18,9 +18,9 @@ body {
 
 }
 
-*{
+* {
   scrollbar-width: thin;
-  scrollbar-color: #192b37 transparent; 
+  scrollbar-color: #192b37 #1a3139;
 }
 
 body.fade-out {
