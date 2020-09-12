@@ -4,6 +4,10 @@ html{
   scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar-track {
+  background: transparent;        /* color of the tracking area */
+}
+
 
 body {
   font-family: 'Open Sans', sans-serif;
