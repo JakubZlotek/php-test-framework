@@ -56,10 +56,10 @@ mysqli_close($conn);
 
 
             <ul class="list-group">
-              <li class="list-group-item text-muted themecolor" style="background-color: transparent; color: #FFF; text-align: center;">User ID: <?php echo $id?></li>
+              <li class="list-group-item" style="background-color: transparent; color: #FFF; text-align: center;">User ID: <?php echo $id?></li>
             </ul>
               <ul class="list-group">
-                <li class="list-group-item text-muted themecolor" style="background-color: transparent; color: #FFF; text-align: center;">Data Dołączenia:</br> <?php echo $created_at?></li>
+                <li class="list-group-item" style="background-color: transparent; color: #FFF; text-align: center;">Data Dołączenia:</br> <?php echo $created_at?></li>
               </ul>
 
 
