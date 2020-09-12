@@ -184,6 +184,10 @@ body.fade-out {
 
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.4) !important;
+  background-color: rgba(0, 0, 0, 0.7) !important;
   color: rgba(255, 255, 255, 1);
+}
+
+.contentcard {
+  margin-top: 7rem !important;
 }
