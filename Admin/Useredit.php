@@ -107,7 +107,7 @@ mysqli_close($conn);
                           <div class="form-group">
                                <div class="col-xs-12">
                                     <br>
-                                  	<button class="btn btn-lg btn-success" type="submit"><i class="far fa-save"></i> Save</button>
+                                  	<button class="btn btn-lg btn-success" type="submit" style="color:#fff"><i class="far fa-save"></i> Zapisz</button>
                                 </div>
                           </div>
                   	</form>
