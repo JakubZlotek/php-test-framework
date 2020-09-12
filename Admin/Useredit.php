@@ -36,9 +36,6 @@ mysqli_close($conn);
 
 <body>
 
-  <script>
-    document.body.className += ' fade-out';
-  </script>
   <?php include '../Includes/Nav.php'?>
   <br>
 
@@ -133,11 +130,6 @@ mysqli_close($conn);
   </div>
 
 
-  <script>
-    $(function() {
-      $('body').removeClass('fade-out');
-    });
-  </script>
 
 </body>
 

@@ -20,10 +20,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 </head>
 <body>
 
-  <script>
-    document.body.className += ' fade-out';
-  </script>
-
   <?php include 'Includes/Nav.php'?>
 
   <div class="container">
@@ -51,11 +47,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <?php include 'Includes/Footer.php'?>
 
 
-  <script>
-    $(function() {
-      $('body').removeClass('fade-out');
-    });
-  </script>
 
 </body>
 </html>

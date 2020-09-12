@@ -16,9 +16,6 @@ session_start();
 
 <body>
 
-  <script>
-    document.body.className += ' fade-out';
-  </script>
 
   <?php include '../Includes/Nav.php'?>
   <br>
@@ -75,11 +72,6 @@ session_start();
   </div>
 
 
-  <script>
-    $(function() {
-      $('body').removeClass('fade-out');
-    });
-  </script>
 
 </body>
 
