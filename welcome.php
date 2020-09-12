@@ -25,8 +25,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <div class="container">
 
 
-      <img src="img/banner.png" class="col-md-12" alt="">
-      <div class="card border-0 shadow my-5 contentcard">
+      <img src="img/banner.png" class="col-md-12 contentcard" alt="">
+      <div class="card border-0 shadow my-5">
         <div class="card-body p-5">
           <h1 class="font-weight-light">Fixed Full Page Background Image</h1>
           <p class="lead">In this snippet, the background image is fixed to the body element. Content on the page will scroll, but the image will remain in a fixed position!</p>
