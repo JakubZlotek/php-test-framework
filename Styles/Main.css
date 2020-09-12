@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Source+Sans+Pro:ital,wght@0,300;0,600;0,700;1,400&display=swap');
 
-html {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: normal;
-}
-
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: normal;
   transition: 1.5s opacity;
+  background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
 body.fade-out {
