@@ -7,13 +7,13 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="http://testy.jajuwa.pl"><i class="fas fa-home"></i>Strona Główna</a>
+        <a class="nav-link" href="http://testy.jajuwa.pl"><i class="fas fa-home"></i> Strona Główna</a>
       </li>
 
       <?php
       if ($_SESSION["isadmin"] === TRUE) {
           echo'<li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="fas fa-user-cog"></i>
               Administrator
             </a>
