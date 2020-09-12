@@ -43,7 +43,7 @@ mysqli_close($conn);
   <div class="container">
 
 
-    <div class="container bootstrap snippet">
+    <div class="container bootstrap snippet contentcard">
         <div class="row">
       		<div class="col-sm-3"><!--left col-->
 
@@ -72,7 +72,7 @@ mysqli_close($conn);
               <div class="tab-content">
                 <div class="tab-pane active" id="home">
                     <hr>
-                      <form class="form" action="editaction.php" method="post" id="registrationForm">
+                      <form class="form" action="editaction.php" method="post" id="registrationForm" style="color:#fff">
                           <div class="form-group">
 
                               <div class="col-xs-6">
@@ -107,8 +107,7 @@ mysqli_close($conn);
                           <div class="form-group">
                                <div class="col-xs-12">
                                     <br>
-                                  	<button class="btn btn-lg btn-success" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
-                                   	<button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>
+                                  	<button class="btn btn-lg btn-success" type="submit"><i class="far fa-save"></i> Save</button>
                                 </div>
                           </div>
                   	</form>
