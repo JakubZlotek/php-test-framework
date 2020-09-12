@@ -19,7 +19,7 @@ session_start();
 
 
       <div class="card border-0 shadow my-5 contentcard">
-        <div class="card-body p-5">
+        <div class="card-body p-5 text-center">
 
 
                 <?php
