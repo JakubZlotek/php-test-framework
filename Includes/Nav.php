@@ -7,7 +7,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="http://testy.jajuwa.pl"><i class="fas fa-house-user"></i>Strona Główna</a>
+        <a class="nav-link" href="http://testy.jajuwa.pl"><i class="fas fa-home"></i>Strona Główna</a>
       </li>
 
       <?php
